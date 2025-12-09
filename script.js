@@ -1894,9 +1894,16 @@ function startQuiz() {
 
 // 导航到指定页面
 function navigateTo(page) {
+  // 1. 切换可见页面
   Object.values(pages).forEach((p) => p.classList.remove("active"));
   pages[page].classList.add("active");
   currentPage = page;
+
+  // 2. 每次页面切换时，回到顶部
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth", // 如果想瞬间跳转，可以改成 "auto"
+  });
 }
 
 // 返回上一页
