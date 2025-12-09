@@ -1967,25 +1967,23 @@ function loadQuestion() {
   optionsContainer.innerHTML = "";
 
   question.options.forEach((option, index) => {
-    const categoryInfo = categories[option.category] || {
-      icon: "✨",
-      color: "#8A6DAE",
-    };
-    const optionDiv = document.createElement("div");
-    optionDiv.className = "quiz-option";
-    optionDiv.dataset.index = index;
-    optionDiv.dataset.category = option.category;
+  const categoryInfo = categories[option.category] || {
+    icon: "✨",
+    color: "#8A6DAE",
+  };
+  const optionDiv = document.createElement("div");
+  optionDiv.className = "quiz-option";
+  optionDiv.dataset.index = index;
+  optionDiv.dataset.category = option.category;
 
-    optionDiv.innerHTML = `
-            <div class="option-icon" style="background: ${categoryInfo.color}20; color: ${categoryInfo.color}">
-                ${option.icon || categoryInfo.icon}
-            </div>
+  // 只保留文字内容，不再显示上方图标，缩短卡片高度
+  optionDiv.innerHTML = `
             <div class="option-text">${option.text}</div>
         `;
 
-    optionDiv.addEventListener("click", function () {
-      selectOption(this);
-    });
+  optionDiv.addEventListener("click", function () {
+    selectOption(this);
+  });
 
     // 如果之前已经选择过这个问题，恢复选择状态
     if (userAnswers[question.id] === index.toString()) {
