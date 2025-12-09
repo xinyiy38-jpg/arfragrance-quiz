@@ -7,11 +7,11 @@
 }
 
 :root {
-    --primary-color: #dcc8dc;
-    --secondary-color: #f5edf7;
-    --accent-color: #e8d8eb;
+    --primary-color: #d973ae;
+    --secondary-color: #f0b1d6;
+    --accent-color: #f7c8e2;
     --text-color: #333;
-    --light-bg: #f9f7fd;
+    --light-bg: #fdf2f8;
     --card-bg: white;
     --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     --border-radius: 16px;
@@ -19,7 +19,7 @@
 
 body {
     font-family: "Noto Sans SC", sans-serif;
-    background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+    background: linear-gradient(135deg, #fdf2f8 0%, #f9d1e5 100%;
     color: var(--text-color);
     min-height: 100vh;
     line-height: 1.6;
@@ -260,12 +260,12 @@ body {
 .btn-primary {
     background: linear-gradient(135deg, var(--primary-color), #ffffff);
     color: white;
-    box-shadow: 0 4px 15px rgba(220, 200, 220, 0.3);/* 更换阴影为新主色 */
+    box-shadow: 0 4px 15px rgba(217, 115, 174, 0.3); /* 阴影颜色改成新主色 d973ae 的 RGBA */
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(220, 200, 220, 0.4);
+    box-shadow: 0 6px 20px rgba(217, 115, 174, 0.4);
 }
 
 .btn-primary:disabled {
@@ -844,7 +844,7 @@ body {
     padding: 8px 20px;
     border-radius: 25px;
     display: inline-block;
-    border: 1px dashed #dcc8dc;
+    border: 1px dashed #d973ae;
 }
 
 .category-score {
@@ -852,11 +852,11 @@ body {
     font-weight: bold;
     color: #fff;
     padding: 10px 25px;
-    background: linear-gradient(135deg, #dcc8dc, #e8d8eb);
+    background: linear-gradient(135deg, #d973ae, #f0b1d6);
     border-radius: 30px;
     display: inline-block;
     margin: 20px 0;
-    box-shadow: 0 4px 15px rgba(220, 200, 220, 0.3);
+    box-shadow: 0 4px 15px rgba(217, 115, 174, 0.3);
 }
 
 .category-description {
@@ -943,7 +943,7 @@ body {
 .detail-item:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-    background-color: rgba(220, 200, 220, 0.05);
+    background-color: rgba(217, 115, 174, 0.05);
 }
 
 .detail-item > div:first-child {
