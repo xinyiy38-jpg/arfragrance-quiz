@@ -2213,17 +2213,14 @@ function calculateResults() {
     `;
   });
 
-  // 显示详细分数图表
-  renderScoreChart(scorePercentages);
-
-  // 显示个性化推荐
-  renderRecommendations(
-    dominantCategories.map(([cat]) => cat),
-    scorePercentages,
-  );
-
-  // 显示调香建议
-  renderSuggestions(scorePercentages);
+  // 结果页目前仅展示主导香调大图，详细占比、个性化推荐和调香建议模块已移除
+  // 如果将来需要恢复，可在此重新调用：
+  // renderScoreChart(scorePercentages);
+  // renderRecommendations(
+  //   dominantCategories.map(([cat]) => cat),
+  //   scorePercentages,
+  // );
+  // renderSuggestions(scorePercentages);
 
   // 发送数据到Google Sheets（如果尚未发送）
   if (!hasSentData) {
