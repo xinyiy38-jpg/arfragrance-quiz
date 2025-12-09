@@ -19,7 +19,7 @@
 
 body {
     font-family: "Noto Sans SC", sans-serif;
-    background: linear-gradient(135deg, #fdf2f8 0%, #f9d1e5 100%;
+    background: linear-gradient(135deg, #fdf2f8 0%, #f9d1e5 100%);
     color: var(--text-color);
     min-height: 100vh;
     line-height: 1.6;
@@ -123,8 +123,8 @@ body {
     border-color: var(--primary-color);
     background: linear-gradient(
         to right,
-        rgba(138, 109, 174, 0.1),
-        rgba(138, 109, 174, 0.05)
+        rgba(217, 115, 174, 0.12),
+        rgba(240, 177, 214, 0.08)
     );
 }
 
@@ -448,8 +448,8 @@ body {
     border-color: var(--primary-color);
     background: linear-gradient(
         to right,
-        rgba(220, 200, 220, 0.1),
-        rgba(220, 200, 220, 0.05)
+        rgba(217, 115, 174, 0.12),
+        rgba(240, 177, 214, 0.06)
     );
     color: var(--primary-color);
 }
@@ -514,8 +514,8 @@ body {
     border-color: var(--primary-color);
     background: linear-gradient(
         135deg,
-        rgba(220, 200, 220, 0.1),
-        rgba(100, 181, 246, 0.05)
+        rgba(217, 115, 174, 0.12),
+        rgba(247, 200, 226, 0.08)
     );
 }
 
@@ -595,7 +595,7 @@ body {
     padding: 15px;
     background-color: #f9f9f9;
     border-radius: 8px;
-    border-left: 4px solid #dcc8dc;
+    border-left: 4px solid #d973ae;
 }
 
 .note-text p {
@@ -651,8 +651,8 @@ body {
 }
 
 .checkbox-container input:checked ~ .checkmark {
-    background-color: #dcc8dc;
-    border-color: #dcc8dc;
+    background-color: #d973ae;
+    border-color: #d973ae;
 }
 
 .checkmark:after {
@@ -803,11 +803,11 @@ body {
     text-align: center;
     padding: 25px;
     border-radius: 15px;
-    background: linear-gradient(145deg, #ffffff, #f8f8f8);
-    box-shadow: 0 8px 25px rgba(220, 200, 220, 0.1);
+    background: linear-gradient(145deg, #ffffff, #fdf2f8);
+    box-shadow: 0 8px 25px rgba(217, 115, 174, 0.12);
     width: 90%;
     max-width: 500px;
-    border: 1px solid #eaeaea;
+    border: 1px solid #f3d6e7;
     margin: 0 auto;
 }
 
@@ -815,7 +815,7 @@ body {
     font-size: 3.5rem;
     margin: 15px 0;
     color: #fff;
-    background-color: rgba(220, 200, 220, 0.1);
+    background-color: rgba(217, 115, 174, 0.18);
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -823,7 +823,7 @@ body {
     align-items: center;
     justify-content: center;
     margin: 10px auto;
-    border: 3px solid #dcc8dc;
+    border: 3px solid #f0b1d6;
 }
 
 .category-name {
@@ -840,11 +840,11 @@ body {
     color: #fff;
     margin-bottom: 20px;
     font-weight: 600;
-    background-color: rgba(220, 200, 220, 0.1);
+    background-color: rgba(217, 115, 174, 0.35);
     padding: 8px 20px;
     border-radius: 25px;
     display: inline-block;
-    border: 1px dashed #d973ae;
+    border: 1px dashed #f0b1d6;
 }
 
 .category-score {
@@ -1068,7 +1068,7 @@ body {
 
 .share-option:hover {
     transform: translateY(-2px);
-    background: #f5edf7;
+    background:rgba(240, 177, 214, 0.25); /* #f0b1d6 的浅版 */
 }
 
 .share-option i {
