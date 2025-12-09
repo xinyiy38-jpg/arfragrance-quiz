@@ -2042,18 +2042,13 @@ function selectOption(element) {
 
 // 更新分数预览
 function updateScorePreview() {
-  const total = Object.values(scores).reduce((a, b) => a + b, 0);
   const preview = document.getElementById("scorePreview");
+  if (!preview) return; // ★★★ 加这一行即可 ★★★
+
+  const total = Object.values(scores).reduce((a, b) => a + b, 0);
 
   if (total === 0) {
-    const lang = translations[currentLanguage];
-    preview.innerHTML = `<div style="color: #666; text-align: center;">${
-      currentLanguage === "zh" 
-        ? "尚未选择任何题目" 
-        : currentLanguage === "en" 
-        ? "No questions selected yet" 
-        : "မေးခွန်းတစ်ခုမှမရွေးရှိသေးပါ"
-    }</div>`;
+    preview.innerHTML =  "...";
     return;
   }
 
