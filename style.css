@@ -545,18 +545,6 @@ body {
     border-radius: 12px;
 }
 
-.current-score h4 {
-    margin-bottom: 15px;
-    color: var(--primary-color);
-}
-
-.score-preview {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin-top: 15px;
-}
-
 .category-preview {
     display: flex;
     align-items: center;
@@ -1279,9 +1267,3 @@ body {
     vertical-align: middle;
     margin-right: 8px;
 }
-
-/* 隐藏“当前香调分布”预览板块（中英缅通用） */
-.score-summary {
-    display: none !important;
-}
-
